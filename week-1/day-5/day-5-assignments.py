@@ -1,23 +1,23 @@
-# Ok google, who are the original avengers?
+# # Ok google, who are the original avengers?
 
-ogAvengers = ["Captain America", "Thor", "Iron Man", "Black Widow", "Hulk"]
+# ogAvengers = ["Captain America", "Thor", "Iron Man", "Black Widow", "Hulk"]
 
-ogAvengers.append("Ant-Man")
-del ogAvengers[2]
-ogAvengers.insert(1, "JennyBoBenny")
-print(ogAvengers)
+# ogAvengers.append("Ant-Man")
+# del ogAvengers[2]
+# ogAvengers.insert(1, "JennyBoBenny")
+# print(ogAvengers)
 
 
-# Fizz Buzz Part II
-for number in range(1,101):
-    if number % 3 == 0 and number % 5 == 0:
-        print("Fizz Buzz")
-    elif number % 3 == 0:
-        print("Fizz")
-    elif number % 5 == 0:
-        print("Buzz")
-    else:
-        print(number)
+# # Fizz Buzz Part II
+# for number in range(1,101):
+#     if number % 3 == 0 and number % 5 == 0:
+#         print("Fizz Buzz")
+#     elif number % 3 == 0:
+#         print("Fizz")
+#     elif number % 5 == 0:
+#         print("Buzz")
+#     else:
+#         print(number)
 
 #  Moving zeroes!
 
