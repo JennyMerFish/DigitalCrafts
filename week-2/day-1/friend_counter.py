@@ -48,28 +48,28 @@ print(friends['friends'][1]['interests'][1])
 
 
 
-# friends = {
-#   'name': 'Ramit',
-#   'email': 'ramit@gmail.com',
-#   'interests': ['movies', 'tennis'],
-#   'friends': [
-#     {
-#       'name': 'Jasmine',
-#       'email': 'jasmine@yahoo.com',
-#       'interests': ['photography', 'tennis']
-#     },
-#     {
-#       'name': 'Jan',
-#       'email': 'jan@hotmail.com',
-#       'interests': ['movies', 'tv']
-#     }
-#   ],
-# }
+friends = {
+  'name': 'Ramit',
+  'email': 'ramit@gmail.com',
+  'interests': ['movies', 'tennis'],
+  'friends': [
+    {
+      'name': 'Jasmine',
+      'email': 'jasmine@yahoo.com',
+      'interests': ['photography', 'tennis']
+    },
+    {
+      'name': 'Jan',
+      'email': 'jan@hotmail.com',
+      'interests': ['movies', 'tv']
+    }
+  ],
+}
 
 
-# def friend_counter(dictionary):
-#   if dictionary.get("friends") != None:
-#     dictionary["Friend Count"] = len(dictionary["friends"])
-#   return dictionary
+def friend_counter(dictionary):
+  if dictionary.get("friends") != None:
+    dictionary["Friend Count"] = len(dictionary["friends"])
+  return dictionary
 
-# print(friend_counter(friends))
+print(friend_counter(friends))
