@@ -1,0 +1,5 @@
+You need to ask the user for the input.
+A user should be able to create a shopping list. A shopping list consists of a title and address. Example = Fiesta, Walmart, Sams Club, Cosco, Randalls etc
+A user should be able to add multiple shoppings lists
+Give user an option to display the list
+A user should be able to add a grocery items to a particular shopping list. A grocery item consists of a title, price, quantity. Example Milk, Cookies, Paper, Napkins, Soda, Chips etc
