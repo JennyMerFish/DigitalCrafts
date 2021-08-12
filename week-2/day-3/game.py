@@ -23,19 +23,19 @@ class Characters:
             print("GOODBYE %s" % user_name)
         elif hero.health <= 20:
             print("One more hit and you're a goner.")
-            time.sleep(1)
+            
             print("As much as I don't like you %s, I don't want %s to win!\nEAT THE APPLES YOU NINCOMPOOP!" % (user_name, villain.name))    
-            time.sleep(1)
+            
         elif hero.health <= 40:
             print("Hmmm...\nNevermind, I'm gonna see how this plays out.")   
-            time.sleep(1) 
+            
         elif hero.health <= 60:
             print("You know you're trying NOT to die, right?")
-            time.sleep(1)
+            
             print("You might want to eat some apples")
-            time.sleep(2)
+            
             print("Or not, I don't really care either way.")
-            time.sleep(1)
+            
 
     def hero_runaway(self):
         print("You ran away.\nThat's so you %s" % user_name)
@@ -59,7 +59,7 @@ class Characters:
         villain.health -= hero.attack_power
         print("You've dealt %d damage to %s with your %s" % (self.attack_power, villain.name, hero.weapon))
         print("%s's health is now: " % villain.name + str(villain.health))
-        time.sleep(1)
+        
 
         if villain.health == 0:
             print("Oh my god")
