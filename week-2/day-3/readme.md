@@ -1,0 +1,1 @@
+#Don't die is a text-based Python game that I made in my second week at Digital Crafts. It has a hero character and villain character that fight to the death. Just run the program and have fun.
