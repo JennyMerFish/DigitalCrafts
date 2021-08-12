@@ -71,7 +71,7 @@ if user_name == "":
     print("Ooooookay. I'm just gonna call you DumDum")
     user_name = "DumDum"
 time.sleep(1)
-print("Thats a terrible hero name.")
+print("That's a terrible hero name.")
 time.sleep(1)
 print("\n\n *Sigh*\n\n")
 time.sleep(1)
@@ -87,27 +87,8 @@ time.sleep(1)
 print("Good thing we have a\n **cough cough**\n\nHERO\n\nhere to save us, because a wild %s has appeared!!!" % villain.name)
 time.sleep(3)
 
-
-
-
 hero = Characters(user_name, user_weapon)  
 
-# print(hero.health)
-# print(hero.hero_lose_health())
-# print(hero.health)
-
-# print(villain.health)
-# print(villain.deal_damage())
-# print(villain.health)
-
-
-
-
-# print(hero.hero_lose_health())
-# print(villain.name, villain.health, villain.weapon)
-# villain.villain_lose_health()
-# print(hero.name)
-# print(villain.health)
 user_choice = ""
 while user_choice != "x" or user_choice != "X":
     
