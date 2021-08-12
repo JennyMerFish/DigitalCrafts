@@ -79,7 +79,7 @@ class Characters:
 
 
 #User name and user weapon setup
-print("Welcome to Hyrule Field!\n")
+print("Welcome to 'Don't Die!'\nThe game where you try not to die")
 time.sleep(1)
 
 user_name = input("What would you like your hero name to be?\n")
