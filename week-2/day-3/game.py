@@ -1,6 +1,6 @@
 import random
 import time
-
+#Character class and functions for hero and villain
 class Characters:
     def __init__(self, name, weapon, health=100, attack_power=10):
         self.name = name
@@ -78,7 +78,7 @@ class Characters:
             
 
 
-
+#User name and user weapon setup
 print("Welcome to Hyrule Field!\n")
 time.sleep(1)
 
@@ -102,12 +102,14 @@ print("I mean...")
 time.sleep(1)
 print("you know what, whatever.\n\n")
 time.sleep(1)
+
 #Defining the villain
 
 villain = Characters("Joe Frasier", "Python", attack_power=20)
 
 print("Good thing we have a\n **cough cough**\n\nHERO\n\nhere to save us, because a wild %s has appeared!!!" % villain.name)
 time.sleep(2.5)
+
 # Defining the hero
 
 hero = Characters(user_name, user_weapon)  
@@ -116,11 +118,12 @@ hero = Characters(user_name, user_weapon)
 
 user_choice = ""
 while user_choice != "x" or user_choice != "X":
-    
+
+    #This breaks the code if someone dies.
     if villain.health == 0 or hero.health == 0:
         user_choice == "x"
         break
-
+    #This determines when the villain attacks
     attack_chance = random.randint(1, 10)
 
     user_choice = input("""
