@@ -17,19 +17,33 @@ class Characters:
             print("Oh look at that")
             time.sleep(1)
             print("You did what everyone thought you would do")
-            time.sleep(1)
+            time.sleep(2)
             print("\nAnd you died.\n")
             time.sleep(1)
             print("GOODBYE %s" % user_name)
-            
+        elif hero.health <= 20:
+            print("One more hit and you're a goner.")
+            time.sleep(1)
+            print("As much as I don't like you %s, I don't want %s to win!\nEAT THE APPLES YOU NINCOMPOOP!" % (user_name, villain.name))    
+            time.sleep(1)
+        elif hero.health <= 40:
+            print("Hmmm...\nNevermind, I'm gonna see how this plays out.")   
+            time.sleep(1) 
+        elif hero.health <= 60:
+            print("You know you're trying NOT to die, right?")
+            time.sleep(1)
+            print("You might want to eat some apples")
+            time.sleep(2)
+            print("Or not, I don't really care either way.")
+            time.sleep(1)
 
     def hero_runaway(self):
         print("You ran away.\nThat's so you %s" % user_name)
-        time.sleep(1)
+        time.sleep(1.5)
         print("I guess you saved yourself a few minutes...")
-        time.sleep(1)
+        time.sleep(1.5)
         print("You should really work on your cardio %s" % user_name)
-        time.sleep(1)
+        time.sleep(.5)
 
     
     def hero_eat_apples(self):
@@ -45,6 +59,7 @@ class Characters:
         villain.health -= hero.attack_power
         print("You've dealt %d damage to %s with your %s" % (self.attack_power, villain.name, hero.weapon))
         print("%s's health is now: " % villain.name + str(villain.health))
+        time.sleep(1)
 
         if villain.health == 0:
             print("Oh my god")
@@ -56,13 +71,14 @@ class Characters:
             print("You defeated %s!" % villain.name)
             time.sleep(1)
             print("You just got lucky. I'm sure you'll die next time")
+            
         
             user_choice == "x"
         
             
 
 
-villain = Characters("Joe Frasier", "Python", attack_power=15)
+
 print("Welcome to Hyrule Field!\n")
 time.sleep(1)
 
@@ -76,18 +92,27 @@ time.sleep(1)
 print("\n\n *Sigh*\n\n")
 time.sleep(1)
 print("I guess it'll have to do.\n")
-time.sleep(1)
+time.sleep(1.5)
 user_weapon = input("What is your weapon of choice?\n")
+if user_weapon == "":
+    user_weapon = "banana"
+    print("I'll just give you a banana since you look like a monkey.")
 time.sleep(1)
 print("I mean...")
 time.sleep(1)
 print("you know what, whatever.\n\n")
 time.sleep(1)
+#Defining the villain
+
+villain = Characters("Joe Frasier", "Python", attack_power=20)
 
 print("Good thing we have a\n **cough cough**\n\nHERO\n\nhere to save us, because a wild %s has appeared!!!" % villain.name)
-time.sleep(3)
+time.sleep(2.5)
+# Defining the hero
 
 hero = Characters(user_name, user_weapon)  
+
+#While loop for game play
 
 user_choice = ""
 while user_choice != "x" or user_choice != "X":
