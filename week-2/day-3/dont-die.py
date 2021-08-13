@@ -143,7 +143,7 @@ while user_choice != "x" or user_choice != "X":
 
     elif user_choice == "1":
         hero.deal_damage()
-        if attack_chance >= 6 and villain.health > 0:
+        if attack_chance >= 5 and villain.health > 0:
             hero.hero_lose_health()
 
    
