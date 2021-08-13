@@ -1,5 +1,6 @@
 import random
 import time
+
 #Character class and functions for hero and villain
 class Characters:
     def __init__(self, name, weapon, health=100, attack_power=10):
