@@ -139,6 +139,7 @@ while user_choice != "x" or user_choice != "X":
     if hero.health == 0 and villain.health == 0:
         print("Well now you've killed each other\nAt the same time\nThat's some Monty Python BS right there")
         user_choice == "x"
+        
         break
 
     elif user_choice == "1":
