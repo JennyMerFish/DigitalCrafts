@@ -1,4 +1,26 @@
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
 img {
-    width: 20px;
-    height: 20px;
+    width: 20%;
+    height: 20%;
+}
+
+input {
+    width: 400px;
+    height: 25px;
+    border-radius: 25px;
+    
+}
+
+.buttons {
+    display: inline-block;
+    align-content: center;
 }
