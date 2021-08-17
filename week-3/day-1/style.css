@@ -26,12 +26,18 @@ nav {
    
 }
 li {
-  
+    display: inline-block;
     list-style-type: none;
-    
+    justify-content: center;
+    width: auto;
 }
 p {
     margin: 10%;
     text-align: center;
+
+}
+.creationslist {
+    display: flex;
+    justify-content: center;
 
 }
