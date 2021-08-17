@@ -8,9 +8,17 @@ img {
 
 }
 h1 {
+    text-align: center;
     margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
-
+h2 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+}
 nav {
     display: inline-block;
   
@@ -21,4 +29,9 @@ li {
   
     list-style-type: none;
     
+}
+p {
+    margin: 10%;
+    text-align: center;
+
 }
