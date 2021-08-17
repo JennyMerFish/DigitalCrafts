@@ -1,43 +1,62 @@
 body {
     font-family: 'Poppins', sans-serif;
     display: flexbox;
+    background-color: #B2BEB5;
 }
 
 img {
     width: 20em;
 
 }
+
+a {
+    color: black;
+}
+
 h1 {
     text-align: center;
     margin-top: 2em;
     margin-left: 10%;
     margin-right: 10%;
+
 }
+
 h2 {
     text-align: center;
 }
+
 h3 {
     text-align: center;
 }
+
 nav {
     display: inline-block;
-  
-    width: 100%;
-   
+    justify-content: space-between;
+    width: 100%;  
 }
+
 li {
     display: inline-block;
     list-style-type: none;
     justify-content: center;
     width: auto;
+    color: black;
 }
+
 p {
     margin: 10%;
     text-align: center;
+    
 
 }
 .creationslist {
     display: flex;
     justify-content: center;
+    justify-content: space-around;
 
+}
+.images {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
