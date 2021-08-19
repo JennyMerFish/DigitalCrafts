@@ -1,0 +1,29 @@
+h1 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 6rem;
+    padding-top: 4rem;;
+}
+nav {
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;;
+}
+#imgcontainer {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4rem;
+
+}
+#footercontainer {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+
+}
