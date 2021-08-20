@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    background-color: black;
+    
+}
+
+nav {
+    display: flex;
+    padding-left: 4rem;
+    margin: 0%;
+    
+}
+
+li {
+    list-style-type: none;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 8px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
