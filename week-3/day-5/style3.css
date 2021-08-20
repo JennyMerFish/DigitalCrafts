@@ -1,5 +1,6 @@
 body {
     background-color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .nav-bar {
@@ -27,4 +28,15 @@ li {
 a {
     color: white;
     text-decoration: none;
+}
+.main {
+    color: white;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.imagerow1 {
+    display: flex;
 }
