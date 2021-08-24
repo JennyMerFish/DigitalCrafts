@@ -66,7 +66,33 @@ function printSquare(number) {
 // console.log(printSquare(5))
 
 // Print A Box
-// Fuck this box
+function printABox(n){
+    
+    let string = "";
+
+    for (let i = 0; i < n; i++) { 
+      for (let j = 0; j < n; j++) { 
+        if (i === 0 || i === n - 1) {
+          string += "*";
+        }
+        else {
+          if (j === 0 || j === n - 1) {
+            string += "*";
+          }
+          else {
+            string += " ";
+          }
+        }
+      }
+      
+      string += "\n";
+    }
+    
+    console.log(string);
+}
+// I tried and tried and tried to get this to work, and I couldn't. I found the answer online, and copied it line for line. Upon doing so, I realized I had my else statement as an else if, and the last else statement outside that specific for loop, and that was causing my holdup. I really struggle grasping the logic for this one. 
+
+printABox(5)
 
 // Print A Banner
 function printBanner(wordsToPrint) {
@@ -84,14 +110,14 @@ printBanner("Damn this is hard")
     
 // LeetSpeak
 // A => 4 E => 3 G => 6 I => 1 O => 0 S => 5 T => 7
-
+// This doesn't work. I think it's my for loop at the top that's messing it up but I don't know why. 
 function leetSpeak(word) {
     for (l in word) {
         switch (l) {
             case "A":
             case "a":
-            l = "4";
-            break;
+                l = "4";
+                break;
             case "E":
             case "e":
                 l = "3";
@@ -108,18 +134,53 @@ function leetSpeak(word) {
             case "o":
                 l = "0";
                 break;
-            case "S":
-            case "s":
-                l = "5";
-                break;
-            case "T":
-            case "t":
-                l = "7";
-                break;
-            default:
-                l= "p"
+        
+            }
+           
+    }
+
+}
+console.log(leetSpeak("Jennifer"))
+
+
+function longVowels(word) {
+    let vowelArray = ["a", "e", "i", "o", "u"]
+    for (l in word) {
+        if (l !== word[0] && l !== word[-1]) {
+            if (vowelArray.includes(word[l])) {
+                console.log(word[l] +l +l +l)
+                //I can target the vowel but can't get it to multiply. 
+                // AARRRGGGHHHHH!!!!!!!
+                
+                
+            }
         }
     }
+
+  
 }
 
-console.log(leetSpeak("Jannifer"))
+console.log(longVowels("Cheese"))
+
+
+// Just the positives
+
+
+function positiveNumbers(array) {
+    newArray = []
+    for (n in array) {
+        if (array[n] >= 0) {
+            newArray.push(array[n])
+
+        }
+    }return newArray
+}
+
+console.log(positiveNumbers([1,-3,4,5,-3]))
+
+// Caesar Cipher
+
+function cipher(word) {
+    
+
+}
