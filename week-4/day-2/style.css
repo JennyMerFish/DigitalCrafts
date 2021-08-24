@@ -1,0 +1,39 @@
+body {
+    background: rgb(10,6,6);
+    background: linear-gradient(128deg, orchid 45%, rgba(78,78,214,0) 87%);
+    font-family: 'Noto Sans JP', sans-serif;
+
+  
+}
+
+.alltogethernow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+      
+}
+
+.listContainer {
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:fit-content;
+}
+
+input {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 20px;
+}
+
+button {
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 25px;
+    background-color: indigo;
+    color: ivory;
+}
