@@ -1,6 +1,6 @@
 body {
     background: rgb(10,6,6);
-    background: linear-gradient(128deg, orchid 45%, rgba(78,78,214,0) 87%);
+    background: linear-gradient(128deg, #843b62 45%, #f67e7d 87%);
     font-family: 'Noto Sans JP', sans-serif;
 
   
@@ -24,6 +24,10 @@ body {
     height:fit-content;
 }
 
+h1 {
+    color: #0b032d;
+}
+
 input {
     border-radius: 10px;
     border: 1px solid black;
@@ -34,6 +38,6 @@ button {
     border-radius: 10px;
     border: 1px solid black;
     height: 25px;
-    background-color: indigo;
-    color: ivory;
+    background-color: #0b032d;
+    color: #f67e7d;
 }
