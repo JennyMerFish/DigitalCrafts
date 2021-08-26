@@ -1,3 +1,22 @@
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
 h1 {
-    color: red;
+    color: black;
+}
+
+img {
+    height: 200px;
+    width: 300px;
+}
+button {
+    height: 30px;
+    background-color: black;
+    color: ivory;
+    border: 2px solid black;
+    border-radius: 3px;
+    width: 100px
 }
