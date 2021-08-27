@@ -12,16 +12,18 @@
 </head>
 <body>
     <div class="main-container">
-        <div class="header-container">
         <h1>Do you want to go outside today?</h1>
-        <input class="input-field" type="text" placeholder="City name">
+        <h2>If so, you'll need to know the weather</h2>
+        <div class="header-container">
+        
+        <input class="input-field" type="text" placeholder="Enter city name">
         <input class="search-button" type="button" value="Search">
         </div>
         <div class="search-results">
-            <div class="temp"></div>
-            <div class="sky"></div>
+            <h1 class="temp"></h1>
+            <h1 class="sky"></h1>
         </div>
     </div>
 </body>
-<script src="api.js"></script>
+<script src="weatherData.js"></script>
 </html>
