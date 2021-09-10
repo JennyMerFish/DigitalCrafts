@@ -17,17 +17,22 @@
 // Write a function that checks if a string is a palindrome. Function should return true or false. A palindrome is a word, phrase, or sequence that reads the same backward as forward.
 // Ex. racecar, Anna
 
-const str1 = "kayak"
-const str2 = "backendisawesome"
-const str3 = "mom"
+// const str1 = "kayak"
+// const str2 = "backendisawesome"
+// const str3 = "mom"
 
-function checkString(string){
-    for (i = 0; i < string.length; i++) {
-        if (string[i] === string[-i -1]){
-            return console.log(true)
-        }
-        else return console.log(false)
-    }
+// function checkString(string){
+//     for (i = 0; i < string.length; i++) {
+//         if (string[i] === string[-i -1]){
+//             return console.log(true)
+//         }
+//         else return console.log(false)
+//     }
+
+// }
+// checkString(str1)
+function groupAnas(array) {
+    
+
 
 }
-checkString(str1)
