@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const PORT = 3009;
+const creds = require("./db")
 app.listen(PORT, console.log(`I'm listening on port ${PORT}`));
 app.use(express.json())
 
@@ -12,7 +13,16 @@ app.post("/create_todo", (req, res) => {
 
 // READ
 app.get("/get_todo", (req, res) => {
-    res.send("/get_todo")
+    creds.connect((err, client, release) => {
+        if (err) { 
+            return console.error("Error getting connected to the client", err.stack);
+        }
+        client.query("SELECT * FROM todolistitems", (err, result) => {
+           console.log(err);
+           console.log(result);
+
+        })
+    })
 })
 
 // UPDATE
