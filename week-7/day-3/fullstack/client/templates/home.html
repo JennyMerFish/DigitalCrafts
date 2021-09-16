@@ -14,18 +14,20 @@
         <input id="add" class="addtask" type="text" placeholder="Enter Task Here">
         <input id="add" class="addtaskurgency" type="text" placeholder="Enter level of urgency">
         <input id="add" class="addtaskadder" type="text" placeholder="Who is adding this task?">
-        <input class="submit" type="submit" value="Add Task">
+        <button class="submit">Submit</button>
     </div>
     
     <div class="buttons">
         <button class="showallbutton">Show All Tasks</button>
+        <input class="updateTask" type="text" placeholder="Updated Task">
+        <input class="updatetaskid" type="text" placeholder="ID#">
         <button class="updatetaskbutton">Update Task by id #</button>
+        <input type="text" class="deletetaskid" placeholder="ID of task to delete">
         <button class="deletetaskbutton">Delete a Task by id #</button>
-
     </div>
     <div class="todocontainer">
-     
+       ${tasks.map(tasks => `<p>${task.task}</p>`).join('')}
     </div>
 </body>
-<script src="toDoList.js"></script>
+<script src="../toDoList.js"></script>
 </html>
