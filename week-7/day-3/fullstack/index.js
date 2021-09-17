@@ -6,7 +6,7 @@ const app = express();
 const PORT = 3012;
 const es6Renderer = require('express-es6-template-engine')
 app.engine('html', es6Renderer);
-app.set('views', 'templates');
+app.set('views', 'client/templates');
 app.set('view engine', 'html');
 app.use(express.static('public'));
 app.use(express.json());
@@ -24,9 +24,9 @@ app.post("/createNewTask", async (req,res) => {
     res.send(`Inserted new task ${newTask.task}`)
 });
 
-app.post("/readAllTasks", async (req,res) => {
+app.get("/readAllTasks", async (req,res) => {
     const tasks = await toDos.findAll();
-  resrender('home', {locals: {tasks}});
+  res.render('home', {locals: {tasks}});
   
 });
 

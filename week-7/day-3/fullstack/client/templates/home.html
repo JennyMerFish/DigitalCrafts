@@ -18,7 +18,6 @@
     </div>
     
     <div class="buttons">
-        <button class="showallbutton">Show All Tasks</button>
         <input class="updateTask" type="text" placeholder="Updated Task">
         <input class="updatetaskid" type="text" placeholder="ID#">
         <button class="updatetaskbutton">Update Task by id #</button>
@@ -26,7 +25,10 @@
         <button class="deletetaskbutton">Delete a Task by id #</button>
     </div>
     <div class="todocontainer">
-       ${tasks.map(tasks => `<p>${task.task}</p>`).join('')}
+       ${tasks.map(task => `<p>${task.id}</p>
+       <p>${task.task}</p>
+       <p>${task.urgency}
+       </p>`).join('')}
     </div>
 </body>
 <script src="../toDoList.js"></script>

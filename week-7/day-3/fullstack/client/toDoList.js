@@ -16,17 +16,31 @@ async function createNewTask() {
   });
 };
 
+async function updateTask() {
+  const updatedTask = document.querySelector(".updateTask").value
+  const updatedTaskId = document.querySelector(".updatetaskid").value
 
-async function readTasks() {
-  showTasks = await fetch("http://localhost:3012/readAllTasks")
-  showTasksJson = await showTasks.json()
-  console.log(showTasksJson)
-}
+  const updatedTask = {task}
+  await fetch("http://localhost:3012/updateTask/" + updatedTaskId, 
+  {method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(updatedTask))
+  })
+};
+
+// async function readTasks() {
+//   showTasks = await fetch("http://localhost:3012/readAllTasks")
+//   showTasksJson = await showTasks.json()
+//   console.log(showTasksJson)
+// }
 
 const submitButton = document.querySelector(".submit")
 submitButton.addEventListener("click", () => createNewTask())
 
-const readButton = document.querySelector(".showallbutton")
-readButton.addEventListener("click", () => readTasks())
+const updateButton = document.querySelector(".updatetaskbutton")
+updateButton.addEventListener("click", () => updateTask())
 
 
