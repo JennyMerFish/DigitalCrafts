@@ -9,12 +9,12 @@ export default class Card extends Component {
     flip = () => {
         this.setState({picToggle: !this.state.picToggle})
     }  
-    // onDeleteByIndex = (e) => {
-    //     const {pokes } = this.state
-    //     this.setState(({pokes: this.state.pokes.filter(function(index) {
-    //         return index !== e.target.value
-    //     })}));
-    // }
+    onDeleteByIndex = (e) => {
+        const {pokes} = this.state
+        this.setState(({pokes: this.state.pokes.filter(function(index) {
+            return index !== e.target.value
+        })}));
+    }
     render() {
        
     const { picToggle } = this.state
