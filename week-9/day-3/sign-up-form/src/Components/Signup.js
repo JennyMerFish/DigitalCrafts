@@ -12,7 +12,7 @@ function Signup(props) {
     return (
         <div className="formBox">
             <form className ="signup" action="">
-            <input type="text" value="dog" onChange={(e) => setSignUpForm({...signUpForm, [e.target.name]: e.target.value})} name ="firstName" placeholder="First Name"></input>
+            <input type="text" value={signUpForm?.firstName} onChange={(e) => setSignUpForm({...signUpForm, [e.target.name]: e.target.value})} name ="firstName" placeholder="First Name"></input>
             <input type="text" onChange={(e) => setSignUpForm({...signUpForm, [e.target.name]: e.target.value})} name ="lastName" placeholder="Last Name"></input>
             <input type="date" onChange={(e) => setSignUpForm({...signUpForm, [e.target.name]: e.target.value})} name ="DOB" placeholder="Date of Birth"></input>
             <input type="text" onChange={(e) => setSignUpForm({...signUpForm, [e.target.name]: e.target.value})} name ="address" placeholder="Street Address"></input>

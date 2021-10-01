@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { SidebarContainer, Button } from '../styled-components/SidebarStyle';
+import { SidebarContainer, Button, sidebarLinks } from '../styled-components/SidebarStyle';
 
 const URL = "https://randomuser.me/api/";
 export default function Sidebar() {
@@ -31,6 +31,10 @@ export default function Sidebar() {
         <img src={user.userImage} alt="" />
         <h4>Welcome {user?.name?.first} {""} {user?.name?.last}</h4>
         <Button onClick={() => setCounter(counter + 1)}>Get New User</Button>
+        <sidebarLinks>I can't</sidebarLinks>
+        <sidebarLinks>remember</sidebarLinks>
+        <sidebarLinks>what's supposed</sidebarLinks>
+        <sidebarLinks>to go here</sidebarLinks>
         </SidebarContainer>
     )
 }

@@ -5,7 +5,7 @@ export default function Header() {
 
   return (
     <HeaderContainer>
-      <h1>Welcome to the stupidest version of CSS ever</h1>
+      <h1>React styled-components</h1>
       
     </HeaderContainer>
   );
