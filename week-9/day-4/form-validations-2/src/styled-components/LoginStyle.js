@@ -9,20 +9,22 @@ grid-template:
 "sidebar LoginContainer LoginContainer LoginContainer"
 "sidebar LoginContainer LoginContainer LoginContainer"
 ;
-grid-template-rows: 75px 1fr 1fr 1fr;
+grid-template-rows: 100px 1fr 1fr 1fr;
 grid-template-columns: 250px 1fr 1fr 1fr;
-height: 100%;
-width: 100%;
-margin: 0px;
+height: 100vh;
+width: 100vw;
+
 
 `
 
 export const LoginContainer = styled.div
 `
 grid-area: LoginContainer;
-background-color: #fafbfc;
+
 padding-left: 20px;
 padding-top: 15px;
+display: grid;
+place-items: center;
 `
 
 export const ActualForm = styled.form
@@ -63,7 +65,7 @@ font-family: 'Montserrat', sans-serif;
 border: none;
 width: 79%;
 padding: 8px;
-background: linear-gradient(.25turn, #fd6670, #ff9c6f);
+background: linear-gradient(.25turn, #E95670, #ff9c6f);
 margin-top: 10px;
 `
 export const RememberMe = styled.label

@@ -10,6 +10,7 @@ import { Redirect } from "react-router";
 import {useState} from 'react'
 import Account from "./Components/Account"
 import Garage from "./Components/Garage";
+import "./App.css"
 function App() {
   const [viewSidebar, setViewSidebar] = useState(true)
   return (
@@ -17,7 +18,7 @@ function App() {
       <Switch>
     <WholePage className="App">
    <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar}/>
-   {viewSidebar ? <Sidebar/> : <></>}
+   <Sidebar viewSidebar={viewSidebar}/> 
    <Route path="/login">
    <Login />
    </Route>

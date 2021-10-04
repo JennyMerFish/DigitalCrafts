@@ -1,28 +1,37 @@
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
 export const SidebarContainer = styled.div
 `
 grid-area: sidebar;
-background-color: #713770;
+background: linear-gradient(#563c89, #051e64);
 padding-left: 20px;
-padding-top: 15px;
+padding-top: 25px;
+display: flex;
+flex-direction: column;
+
+
 `
 export const Button = styled.button
 `
-background-color: #E95670;
+background: linear-gradient(.25turn, #E95670, #ff9c6f);
 color: black;
-border-radius: 3px;
+border-radius: 20px;
 border: none;
 padding: 10px;
+height: 35px;
 
 `
-export const SidebarLinks = styled.p
+export const SidebarLink = styled(Link)
 `
-border-bottom: 1px solid black;
-padding: 8px;
+padding: 15px;
+text-decoration: none;
+font-family: 'Montserrat', sans-serif;
+color: #d6ccee;
 `
-export const UserPhoto =styled.img
+export const UserPhoto = styled.img
 `
-border-radius: 15px;
+border-radius: 50px;
+height: 75px;
 `
 
