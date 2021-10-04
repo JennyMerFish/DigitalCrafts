@@ -6,5 +6,6 @@ grid-area: header;
 background-color: #B34270;
 padding-left: 20px;
 font-family: 'Yaldevi', sans-serif;
+display: flex;
 
 `

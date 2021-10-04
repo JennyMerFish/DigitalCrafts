@@ -16,8 +16,13 @@ border: none;
 padding: 10px;
 
 `
-export const sidebarLinks = styled.p
+export const SidebarLinks = styled.p
 `
 border-bottom: 1px solid black;
 padding: 8px;
 `
+export const UserPhoto =styled.img
+`
+border-radius: 15px;
+`
+
