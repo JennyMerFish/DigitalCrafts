@@ -2,14 +2,14 @@ import React, {useEffect, useState}  from 'react'
 import {HeaderContainer} from "../styled-components/HeaderStyle.js"
 import { Button } from '../styled-components/SidebarStyle.js';
 import { UserPhoto } from '../styled-components/SidebarStyle.js';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 const URL = "https://randomuser.me/api/";
 
 export default function Header(props) {
-  
+  const dispatch = useDispatch()
   const viewSidebar = props.viewSidebar
   const setViewSidebar = props.setViewSidebar
- 
+ const userData = useSelector((state) => state.userData)
   const [user, setUser] = useState({});
   const [counter, setCounter] = useState(0);
   useEffect(() => {
@@ -24,9 +24,8 @@ export default function Header(props) {
       });
 
       const jsonUser = await getTheUsers.json();
-      setUser({
-        ...jsonUser.results[0],
-        userImage: jsonUser?.results[0]?.picture?.large,
+      dispatch({type: "GET_USERS", payload: {
+        ...jsonUser.results[0]}
       });
     };
     getUserData();
@@ -37,9 +36,10 @@ export default function Header(props) {
       <Button onClick={() => setViewSidebar(!viewSidebar)}>{viewSidebar ? "Hide Sidebar": "Show Sidebar"}</Button>
       <h1>React Styled-components</h1>
       <Button onClick={() => setCounter(counter + 1)}>Get New User</Button>
-      <h4>Welcome {user?.name?.first} {""} {user?.name?.last}</h4>
-      <UserPhoto src={user.userImage} alt="" />
-       
+      <h4>Welcome {userData?.name?.first} {userData?.name?.last}</h4>
+      <UserPhoto src= {userData?.picture?.thumbnail} alt="" />
+       <button onClick={() => dispatch({type: "SET_USERNAME", payload: "poop"})}>Dispatcher</button>
+      <button onClick={() => dispatch({type: "SET_RESTAURANTS", payload: ["Koto", "Kelly's", "Goode Co.", "Bohemeo's", "Voodoo Queen"]})}>Restaurants</button>
         
     </HeaderContainer>
   );
