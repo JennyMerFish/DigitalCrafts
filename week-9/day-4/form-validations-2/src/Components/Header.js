@@ -2,6 +2,7 @@ import React, {useEffect, useState}  from 'react'
 import {HeaderContainer} from "../styled-components/HeaderStyle.js"
 import { Button } from '../styled-components/SidebarStyle.js';
 import { UserPhoto } from '../styled-components/SidebarStyle.js';
+import { useDispatch } from 'react-redux';
 const URL = "https://randomuser.me/api/";
 
 export default function Header(props) {
