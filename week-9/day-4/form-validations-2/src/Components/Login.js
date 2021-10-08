@@ -6,7 +6,7 @@ import {Link} from "react-router-dom"
 
 export default function Login() {
     const [formData, setFormData] = useState({})
-    return (
+    return (<>
         <LoginContainer>
             
             <ActualForm>
@@ -27,5 +27,6 @@ export default function Login() {
                 
             </ActualForm>
         </LoginContainer>
+        </>
     )
 }

@@ -38,8 +38,8 @@ export default function Header(props) {
       <Button onClick={() => setCounter(counter + 1)}>Get New User</Button>
       <h4>Welcome {userData?.name?.first} {userData?.name?.last}</h4>
       <UserPhoto src= {userData?.picture?.thumbnail} alt="" />
-       <button onClick={() => dispatch({type: "SET_USERNAME", payload: "poop"})}>Dispatcher</button>
-      <button onClick={() => dispatch({type: "SET_RESTAURANTS", payload: ["Koto", "Kelly's", "Goode Co.", "Bohemeo's", "Voodoo Queen"]})}>Restaurants</button>
+       {/* <button onClick={() => dispatch({type: "SET_USERNAME", payload: "poop"})}>Dispatcher</button>
+      <button onClick={() => dispatch({type: "SET_RESTAURANTS", payload: ["Koto", "Kelly's", "Goode Co.", "Bohemeo's", "Voodoo Queen"]})}>Restaurants</button> */}
         
     </HeaderContainer>
   );

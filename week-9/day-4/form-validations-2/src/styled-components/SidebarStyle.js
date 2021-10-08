@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 export const SidebarContainer = styled.div
 `
 grid-area: sidebar;
-background: linear-gradient(#563c89, #051e64);
+background-color: #051e64;
 padding-left: 20px;
 padding-top: 25px;
 display: flex;
