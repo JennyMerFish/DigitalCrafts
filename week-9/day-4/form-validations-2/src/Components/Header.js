@@ -10,7 +10,7 @@ export default function Header(props) {
   const viewSidebar = props.viewSidebar
   const setViewSidebar = props.setViewSidebar
  const userData = useSelector((state) => state.userData)
-  const [user, setUser] = useState({});
+  // const [user, setUser] = useState({});
   const [counter, setCounter] = useState(0);
   useEffect(() => {
     const getUserData = async () => {
@@ -35,7 +35,7 @@ export default function Header(props) {
     <HeaderContainer>
       <Button onClick={() => setViewSidebar(!viewSidebar)}>{viewSidebar ? "Hide Sidebar": "Show Sidebar"}</Button>
       <h1>React Styled-components</h1>
-      <Button onClick={() => setCounter(counter + 1)}>Get New User</Button>
+      {/* <Button onClick={() => setCounter(counter + 1)}>Get New User</Button> */}
       <h4>Welcome {userData?.name?.first} {userData?.name?.last}</h4>
       <UserPhoto src= {userData?.picture?.thumbnail} alt="" />
        {/* <button onClick={() => dispatch({type: "SET_USERNAME", payload: "poop"})}>Dispatcher</button>

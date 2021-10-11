@@ -1,5 +1,7 @@
 import { combineReducers } from "redux";
-import getUsers from "./getUsers";
+import userData from "./userData";
+import graphData from "./graphData"
+import loginInfo from "./loginInfo";
 
 // const initialState ={
 // userName: "",
@@ -11,7 +13,9 @@ import getUsers from "./getUsers";
 
 
 const rootReducer = combineReducers({
-    getUsers
+    userData,
+    graphData,
+    loginInfo
         // case "SET_USERNAME":
         //     return {...state, userName: action.payload};
             

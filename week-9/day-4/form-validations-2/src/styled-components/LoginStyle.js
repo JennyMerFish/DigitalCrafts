@@ -20,11 +20,10 @@ width: 100vw;
 export const LoginContainer = styled.div
 `
 grid-area: LoginContainer;
-
-padding-left: 20px;
-padding-top: 15px;
+padding-top: 50px;
+padding-left: 100px;
 display: grid;
-place-items: center;
+
 `
 
 export const ActualForm = styled.form
