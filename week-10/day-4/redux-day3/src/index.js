@@ -5,10 +5,10 @@ import { applyMiddleware, createStore } from 'redux';
 import logger from 'redux-logger';
 import App from './App';
 import rootReducer from './reducers/rootReducer';
+import thunk from "redux-thunk"
 
 
-
-const store = createStore(rootReducer, applyMiddleware(logger))
+const store = createStore(rootReducer, applyMiddleware(logger, thunk))
 
 ReactDOM.render(
   <React.StrictMode>

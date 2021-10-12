@@ -83,7 +83,7 @@ margin-top: 2px;
 
 `
 
-export const SignUp = styled.p
+export const SignUp = styled.a
 `
 font-family: 'Montserrat', sans-serif;
 color: #d6ccee;
