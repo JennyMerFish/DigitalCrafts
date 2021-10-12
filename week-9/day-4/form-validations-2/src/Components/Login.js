@@ -4,15 +4,17 @@ import { Button } from '../styled-components/SidebarStyle'
 import {Link} from "react-router-dom"
 import {createClient} from '@supabase/supabase-js'
 import { useHistory } from 'react-router'
+import { useDispatch } from 'react-redux'
+
 const supabase = createClient(
     "https://gqrgcgbypvierwrjkguc.supabase.co",
 "    eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzNDA1MzkyNCwiZXhwIjoxOTQ5NjI5OTI0fQ.iWXT-NHSgBBqsn3iyHPrEYDnZkzjeMsNGGToq8JYPMM")
 
 
 export default function Login(props) {
-
+    const dispatch = useDispatch()
     const [formData, setFormData] = useState({})
-const history = useHistory()
+    const history = useHistory()
 
     const login = async (e) => {
         e.preventDefault()
@@ -23,9 +25,11 @@ const history = useHistory()
           } ) 
           if (session) {
               history.push("/dashboard");
+              dispatch({type: "SET_USER", payload: formData.username})
           } else {
               alert(error.message)
           }
+
 console.log(user, session, error)
     }
 

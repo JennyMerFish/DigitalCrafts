@@ -9,6 +9,7 @@ export default function Header(props) {
   const dispatch = useDispatch()
   const viewSidebar = props.viewSidebar
   const setViewSidebar = props.setViewSidebar
+  const user = useSelector((state) => state.loginInfo.userData)
  const userData = useSelector((state) => state.userData)
   // const [user, setUser] = useState({});
   const [counter, setCounter] = useState(0);
@@ -36,8 +37,8 @@ export default function Header(props) {
       <Button onClick={() => setViewSidebar(!viewSidebar)}>{viewSidebar ? "Hide Sidebar": "Show Sidebar"}</Button>
       <h1>React Styled-components</h1>
       {/* <Button onClick={() => setCounter(counter + 1)}>Get New User</Button> */}
-      <h4>Welcome {userData?.name?.first} {userData?.name?.last}</h4>
-      <UserPhoto src= {userData?.picture?.thumbnail} alt="" />
+      <h4>Welcome {user}</h4>
+      {/* <UserPhoto src= {userData?.picture?.thumbnail} alt="" /> */}
        {/* <button onClick={() => dispatch({type: "SET_USERNAME", payload: "poop"})}>Dispatcher</button>
       <button onClick={() => dispatch({type: "SET_RESTAURANTS", payload: ["Koto", "Kelly's", "Goode Co.", "Bohemeo's", "Voodoo Queen"]})}>Restaurants</button> */}
         

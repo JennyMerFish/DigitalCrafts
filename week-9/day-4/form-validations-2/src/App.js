@@ -5,28 +5,25 @@ import {LoginContainer, WholePage} from "./styled-components/LoginStyle"
 import Home from "./Components/Home";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Dashboard from "./Components/Dashboard"
-import ErrorPage from "./Components/ErrorPage";
 import { Redirect } from "react-router";
 import {useState} from 'react'
 import Account from "./Components/Account"
 import Garage from "./Components/Garage";
+
 import "./App.css"
+import { useSelector } from "react-redux";
 function App() {
   const [viewSidebar, setViewSidebar] = useState(true)
   const register = true;
-
-  const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
-  console.log({user})
+  const user = useSelector((state) => state.loginInfo.userData)
+  // const user = JSON.parse(localStorage.getItem("supabase.auth.token"));
+  // console.log({user})
   return (
     <Router>
       <Switch>
-      <Route path="/login">
-      <Login />
-      </Route>
-      <Route path="/register">
-       <Login register={register} />
-      </Route>
-        <WholePage className="App">
+      {user ? (
+        <>
+          <WholePage className="App">
       <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar}/>
       <Sidebar viewSidebar={viewSidebar}/> 
       
@@ -42,7 +39,18 @@ function App() {
       <Route path="/garage">
         <Garage />
    </Route>
-   
+   </WholePage>
+   </>) :
+
+      
+      (
+      <><Route path="/login">
+      <Login />
+      </Route>
+      <Route path="/register">
+       <Login register={register} />
+      </Route></>)
+      }
    {/* <Route path="*">
      <Redirect to="/errorpage" />
      </Route>
@@ -51,7 +59,7 @@ function App() {
      </Route> */}
   
      
-    </WholePage>
+    
     </Switch>
     </Router>
   );
