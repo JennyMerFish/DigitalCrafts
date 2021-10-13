@@ -1,9 +1,12 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import "./SignUpStyles.css"
+import {ConsoleLogVariable, DecrementCounter} from "../actions/SignUpFormActions"
+import {IncrementCounter} from "../actions/SignUpFormActions"
 export default function SignUpForm() {
     const dispatch = useDispatch()
     const counter = useSelector((state) => state.counter)
+  
     return (
         <div className="signUpForm">
             <form action="" >
@@ -14,9 +17,10 @@ export default function SignUpForm() {
                 <input type="submit" value="Submit" />
             </form>
             <p>{counter}</p>
-            <button onClick={() => dispatch({type: "INCREMENT_COUNTER"})}>Increment</button>
-            <button onClick={() => dispatch({type: "DECREMENT_COUNTER"})}>Decrement</button>
+            <button onClick={() => IncrementCounter(dispatch)}>Increment</button>
+            <button onClick={() => DecrementCounter(dispatch)}>Decrement</button>
             <button onClick={() => dispatch({type: "FILL_INFO"})}>News </button>
+            <button onClick={() => ConsoleLogVariable("Jenny")}>Print to Console</button>
         </div>
     )
 }
