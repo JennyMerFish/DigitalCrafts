@@ -2,11 +2,14 @@ import "./App.css";
 import { useState } from "react";
 import StudentContainer from "./components/StudentContainer";
 import studentData from "./studentData";
+import { useDispatch, useSelector } from "react-redux"
 
 function App() {
   // const [students, setStudents] = useState(studentData);
-  const [counter, setCounter] = useState(0);
-
+  const counter = useSelector((state)=> state.counter)
+  const dispatch = useDispatch()
+  const [input, setInput] = useState(0)
+dispatch({type: "GET_STUDENTS"})
   // state is a place that we can store/hold data
   // we store state in functional components using hooks
   // the process of passing data to another component is called props
@@ -14,6 +17,9 @@ function App() {
     <div className="App">
       <h1>App js</h1>
       <h3>Data starts here</h3>
+      <p>Counter : {counter}</p>
+      <input type="text" onChange={(e) => setInput(parseInt(e.target.value))} />
+      <button onClick={()=>dispatch({type: "THE_COUNTER", payload: input})}>Increase Counter</button>
       <StudentContainer />
     </div>
   );
