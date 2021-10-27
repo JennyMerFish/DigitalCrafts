@@ -1,11 +1,11 @@
-const initialState ={
+import { combineReducers } from "redux";
+import testimonialData from "./TestimonialReducer";
+import servicesData from "./ServicesReducer";
 
-}
-function rootReducer(state=initialState, action) {
-    switch (action.type) {
-        default:
-            return state
-    }
-}
 
+
+const rootReducer = combineReducers({
+    testimonialData,
+    servicesData
+})
 export default rootReducer;

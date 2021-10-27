@@ -1,7 +1,10 @@
 import React from 'react'
 import ServicesCards from './ServicesCards'
-import { services } from './ServicesData'
+import { useSelector } from 'react-redux'
+
+
 export default function Services() {
+    const services = useSelector((state)=> state.servicesData)
     return (
         <div className="servicesPage">
             <a href="/">Back Home</a>

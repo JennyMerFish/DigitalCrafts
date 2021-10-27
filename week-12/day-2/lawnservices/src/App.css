@@ -39,3 +39,16 @@ text-transform: uppercase;
   border: 2px solid grey;
 
 }
+.testimonialPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+
+  padding: 1rem;
+}
+.testimonialCard {
+  border: 2px solid grey;
+  margin: 3rem;
+  padding: 1rem;
+}
