@@ -1,11 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function HomepageCard(props) {
     return (
         <div className="homepageCard">
            
-        <a href={props.link.path}>{props.link.name}</a>
-           {console.log(props.link.path)}
+        <Link to={props.link.path}>{props.link.name}</Link>
+           
             
         </div>
     )
