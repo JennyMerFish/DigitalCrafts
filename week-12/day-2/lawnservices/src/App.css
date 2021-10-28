@@ -176,3 +176,19 @@ font-weight: 700;
  vertical-align: sub;
  display: flex;
 }
+
+.weatherCard {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+border: 2px solid grey;
+box-shadow: 3px 3px 6px grey;
+margin: 10px;
+}
+
+.temp{
+  display: flex;
+  margin: 2px;
+  text-align: center;
+}
