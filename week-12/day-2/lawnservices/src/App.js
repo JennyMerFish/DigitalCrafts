@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs"
 import ContactUs from "./components/ContactUs"
 import Homepage from "./components/Homepage"
 import Services from "./components/Services"
+import Weather from './components/Weather';
 function App() {
   return (
     <Router>
@@ -30,6 +31,9 @@ function App() {
         </Route>
         <Route path="/services">
           <Services />
+        </Route>
+        <Route path="/weather">
+          <Weather />
         </Route>
         </div>
       </Switch>

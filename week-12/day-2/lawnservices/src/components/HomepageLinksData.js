@@ -5,5 +5,6 @@ export const homepageLinksData = [
     {name: "Gallery", path: "/gallery"},
     {name: "Testimonials", path: "/testimonials"},
     {name: "About Us", path: "/aboutus"},
-    {name: "Contact Us", path: "/contactus"}
+    {name: "Contact Us", path: "/contactus"},
+    {name: "Check Weather", path: "/weather"}
 ];
