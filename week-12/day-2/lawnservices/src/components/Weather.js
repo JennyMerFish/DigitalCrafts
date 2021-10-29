@@ -20,16 +20,15 @@ useEffect(() => {
         
     }
 }, [])
-// const newDate = new Date(Date.UTC(1635876000))
-// console.log(newDate.toLocaleDateString)
+
     return (
         <div className="weatherPage">
             <Link to="/">Back Home</Link>
             <h1>Safety is our number 1 priority, so we don't work in storms. Check the weather forecast to see if we can schedule service, or if you need to water your plants!</h1>
             <h3>7 Day Forecast:</h3>
-            {/* {weather?.data?.daily?.map((day) => (newArray.push(day.dt)))} */}
+            
             {weather?.data?.daily?.map((day) => (<WeatherCard weather={day} />))}
-            {/* {newArray?.map((day) => (<WeatherCard dates ={Date(day)} />))} */}
+         
 
         </div>
     )

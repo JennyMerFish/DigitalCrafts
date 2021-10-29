@@ -8,7 +8,7 @@ body {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: #81B622;
+  background: linear-gradient(#81B622, #59981A);
 }
 
 .navbar a {
@@ -49,7 +49,7 @@ body {
   align-items: center;
   margin: 1.5rem;
   color: black;
-  background-color: #81B622;
+  background: linear-gradient(#81B622, #59981A);
   box-shadow: 3px 3px 6px lightgrey;
 }
 
@@ -85,7 +85,7 @@ font-weight: 700;
   border-radius: 6px;
   box-shadow: 3px 3px 6px lightgrey;
   color: black;
-  background-color: #81B622;
+  background: linear-gradient(#81B622, #59981A);
 }
 
 .servicesCard img {
@@ -110,7 +110,7 @@ font-weight: 700;
   margin: 2rem;
   padding: 1rem;
   box-shadow: 3px 3px 6px grey;
-  background-color: #81B622;
+  background: linear-gradient(#81B622, #59981A);
 }
 
 .galleryPage {
@@ -127,7 +127,7 @@ font-weight: 700;
 
 .galleryCard {
   
-  background-color: #81B622;
+  background: linear-gradient(#81B622, #59981A);
   margin: 20px;
   border-radius: 5px;
   box-shadow: 3px 3px 6px lightgrey;
@@ -175,6 +175,7 @@ font-weight: 700;
   color: black;
  vertical-align: sub;
  display: flex;
+ 
 }
 
 .weatherCard {
@@ -185,6 +186,8 @@ align-items: center;
 border: 2px solid grey;
 box-shadow: 3px 3px 6px grey;
 margin: 10px;
+background: linear-gradient(#81B622, #59981A);
+width: 150px;
 }
 
 .temp{
