@@ -19,10 +19,11 @@ body {
 
 .logo {
   display: flex;
+  align-items: center;
 }
 
 .logo img {
-  padding-left: 4px;
+  padding-left: 10px;
 }
 
 .homepage {
@@ -126,7 +127,6 @@ font-weight: 700;
 }
 
 .galleryCard {
-  
   background: linear-gradient(#81B622, #59981A);
   margin: 20px;
   border-radius: 5px;
@@ -143,19 +143,43 @@ font-weight: 700;
 
 .aboutUsPage {
   text-align: center;
+  
 }
 
+.aboutUsPage img {
+  width: 65%;
+}
 .aboutUsPage a {
+  width: 100%;
+  text-align: justify;
   text-decoration: none;
   color: black;
   vertical-align: sub;
   display: flex;
+}
 
+.aboutUsPage h3 {
+  margin: 20px 25px 20px 25px;
 }
 
 .contactUsPage {
   text-align: center;
 
+}
+
+.icons {
+  display: flex;
+
+}
+.icons img {
+  width: 100px;
+}
+
+.icons a {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
 }
 
 .contactUsPage a {
@@ -168,6 +192,24 @@ font-weight: 700;
 
 .weatherPage {
   text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.weatherPage2 {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  
+  justify-content: center;
+}
+
+.weatherPage2 h2 {
+margin: 15px
+}
+
+.weatherPage2 h3 {
+  width: 100%;
 }
 
 .weatherPage a {
@@ -185,13 +227,194 @@ justify-content: center;
 align-items: center;
 border: 2px solid grey;
 box-shadow: 3px 3px 6px grey;
-margin: 10px;
+margin: 7px;
 background: linear-gradient(#81B622, #59981A);
-width: 150px;
+width: 107px;
 }
 
 .temp{
   display: flex;
   margin: 2px;
   text-align: center;
+}
+
+
+@media only screen and (min-width: 600px) {
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding: 0 2rem 2rem 2rem; */
+    margin-top: 0;
+    background: URL("https://images.unsplash.com/photo-1549448046-b89e7214060d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat fixed;
+    background-size: cover;
+    position: fixed;
+   
+  }
+
+  .homepage img {
+    width: 0;
+    height: 0;
+  }
+
+  .homepageCard {
+    width: 140px;
+    /* height: 150px; */
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    
+    margin: 10px;
+    color: black;
+    background: linear-gradient(#81B622, #59981A);
+  }
+
+  .servicesCard {
+    display: flex;
+    padding: 20px;
+    margin: 2rem;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px lightgrey;
+    color: black;
+    background: linear-gradient(#81B622, #59981A);
+    justify-content: center;
+  }
+
+  .servicesCard img {
+    padding-right: 20px;
+  }
+
+  .galleryPage h1 {
+    width: 100%;
+  }
+  .galleryPage {
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galleryCard {
+    width: 300px;
+    background: linear-gradient(#81B622, #59981A);
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 6px lightgrey;
+    padding: 1rem;
+  }
+
+  .galleryPage a {
+    width: 100%;
+    text-align: justify;
+  }
+
+  .testimonialCard {
+    width: 350px;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 1rem;
+    box-shadow: 3px 3px 6px grey;
+    background: linear-gradient(#81B622, #59981A);
+  }
+
+  .testimonialPage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .testimonialPage h1 {
+    width: 100%;
+  }
+
+  .testimonialPage a {
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    vertical-align: sub;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#81B622, #59981A);
+    height: 200px;
+    font-size:xx-large;
+  }
+
+  .logo {
+    align-items: center;
+  }
+  .logo img {
+    padding-left: 50px;
+    width: 50px;
+  }
+  
+  .homepage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* padding: 0 2rem 2rem 2rem; */
+    margin-top: 0;
+    width: 100vw;
+    background: URL("https://images.unsplash.com/photo-1549448046-b89e7214060d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bGFuZHNjYXBpbmd8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60") no-repeat fixed;
+    background-size: cover;
+    position: fixed;
+   
+  }
+
+  .homepage img {
+    width: 0;
+    height: 0;
+  }
+
+  .homepageCard {
+    width: 250px;
+    /* height: 150px; */
+    padding: 40px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    margin: 10px;
+    color: black;
+    background: linear-gradient(#81B622, #59981A);
+  }
+
+ .servicesCard {
+    
+    padding: 20px;
+    width: 300px;
+    margin: 2rem;
+    border: 2px solid lightgrey;
+    border-radius: 6px;
+    box-shadow: 3px 3px 6px lightgrey;
+    color: black;
+    background: linear-gradient(#81B622, #59981A);
+    justify-content: center;
+  }
+  .servicesPage {
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+  }
 }
