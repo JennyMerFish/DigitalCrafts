@@ -20,6 +20,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  font-size: smaller;
 }
 
 .logo img {
