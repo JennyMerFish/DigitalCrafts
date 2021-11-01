@@ -1,2 +1,2 @@
 ## About The Project
-![Title(/src/assets/NavbarSS.png)
+![Title](/src/assets/NavbarSS.png)
