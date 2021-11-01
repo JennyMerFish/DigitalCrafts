@@ -237,6 +237,11 @@ width: 107px;
   margin: 2px;
   text-align: center;
 }
+.icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 45px;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -343,6 +348,11 @@ width: 107px;
     vertical-align: sub;
     display: flex;
   }
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -415,6 +425,19 @@ width: 107px;
   .servicesPage {
     text-align: center;
     display: flex;
-    flex-wrap:wrap;
+    flex-direction: column;
+   
+  }
+  .servicesCards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+
+  .icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 45px;
   }
 }
